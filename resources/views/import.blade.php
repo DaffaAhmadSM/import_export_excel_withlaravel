@@ -38,7 +38,7 @@
                 <td>{{$siswa->nama}}</td>
                 <td>{{$siswa->nis}}</td>
                 <td>
-                    <form action={{url('/delete/'.$siswa->id)}}" method="POST">
+                    <form action="{{url('/delete/'.$siswa->id)}}" method="POST">
                     @method('delete')
                     @csrf
                     <button class="btn btn-danger" onclick="return confirm('Apa Anda yakin inging Menghapus Data?')">Delete</button>
